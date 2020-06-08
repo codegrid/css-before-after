@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>=^.^=</title>
+<style>
+a {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  padding: 20px 10px;
+  border: 1px solid #000;
+}
+
+a::before {
+  /* 右向きの、横16px x 縦12px の二等辺三角形をつくる */
+  content: "";
+  position: absolute;
+  /* 上下っ中央に配置するため、高さの半分（12 / 2）を引く */
+  top: calc( 50% - 6px );
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* 高さの半分として 8px、幅として 12px */
+  border-width: 8px 0 8px 12px;
+  /* 向きと反対方向の border に任意の色を付ける */
+  border-color: transparent transparent transparent currentColor;
+}
+</style>
+</head>
+<body>
+
+<a
+  class="BlockLink"
+  href="#"
+>
+  リンク
+</a>
+
+</body>
+</html>
