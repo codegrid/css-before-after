@@ -14,16 +14,16 @@ a {
 }
 
 a::before {
-  /* 右向きの、横16px x 縦12px の二等辺三角形をつくる */
+  /* 右向きの、高さ12px x 底辺16px の二等辺三角形をつくる */
   content: "";
   position: absolute;
-  /* 上下っ中央に配置するため、高さの半分（12 / 2）を引く */
-  top: calc( 50% - 6px );
+  /* 上下中央に配置するため、高さの半分（12 / 2）を引く */
+  top: calc( 50% - 8px );
   right: 10px;
   width: 0;
   height: 0;
   border-style: solid;
-  /* 高さの半分として 8px、幅として 12px */
+  /* 底辺の半分として 8px、高さとして 12px */
   border-width: 8px 0 8px 12px;
   /* 向きと反対方向の border に任意の色を付ける */
   border-color: transparent transparent transparent currentColor;
